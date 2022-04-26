@@ -1,0 +1,32 @@
+.input{
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  width: 100%;
+  padding: 10px 17px 8px 17px;
+  outline: none;
+  border: 1px solid #6c757d;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #081744;
+  margin-bottom: 10px;
+  transition: .3s;
+}
+.input::placeholder{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #8B8E96;
+}
+.input:focus, .input:active{
+  transform: scale(1.005);
+  border-color: #17a2b8;
+}
+.input[aria-invalid="true"] {
+  border-color: #E90B54;
+}

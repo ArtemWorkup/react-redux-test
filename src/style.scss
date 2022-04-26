@@ -1,0 +1,33 @@
+html,body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.validation {
+    & input:invalid, & textarea:invalid {
+        border-color: #E90B54;
+    }
+    & input:invalid + .invalid-feedback, & textarea:invalid + .invalid-feedback {
+        display: block;
+    }
+}
+.invalid-feedback {
+    color: #E90B54;
+    display: none;
+    margin-bottom: 15px;
+}
+.error {
+    color: #E90B54;
+    margin-bottom: 10px;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+}

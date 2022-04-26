@@ -1,0 +1,47 @@
+//header styles start
+.header {
+  height: 60px;
+  background: #17a2b8;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.header-title {
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.header-link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: .3s;
+}
+.header-link:hover {
+  opacity: .8;
+}
+//header styles end
+
+//main styles start
+.main {
+  margin-top: 45px;
+}
+.articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 35px;
+}
+//main styles end
+
+
+@media screen and (max-width: 720px) {
+  .articles {
+    grid-template-columns: 1fr;
+  }
+}
